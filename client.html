@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+    <div id="container">
+        <form action="comment" method="post">
+            <div class="input-group">
+                <div><label for="first-name">First Name</label></div>
+                <div><input type="text" id="first-name" name="first-name"></div>
+            </div>
+
+            <div class="input-group">
+            <div><label for="address">Address</label></div>
+            <div><input type="text" id="address" name="address"></div>
+            </div>
+
+            <div class="input-group">
+            <div><label for="region">Region</label></div>
+            <select name="region" id="region">
+                <option value="" selected>[ Select One ]</option>
+                <option value="sicilia">Sicilia</option>
+                <option value="calabria">Calabria</option>
+                <option value="campania">Campania</option>
+            </select>
+            </div>
+
+            <div class="input-group">
+                <div><label for="postal-code">Postal code</label></div>
+                <div><input type="text" id="postal-code" name="postal-code"></div>
+            </div>
+
+            <div class="input-group">
+                <div><label for="comments">Comments</label></div>
+                <div>
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
